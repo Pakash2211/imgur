@@ -41,7 +41,6 @@ const debounce = async () => {
             }else{
                 searchBin.setAttribute("id","a");
                 searchBin.innerHTML="";
-
             }
         } catch (error) {
             console.log(error);
