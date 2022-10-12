@@ -1,9 +1,69 @@
 let currentPage = 1;
 let limit = 20;
 
-const debounce=()=>{
-    
+let timer;
+const debounce = async () => {
+    if (timer) {
+        clearTimeout(timer);
+    }
+    timer = setTimeout(async () => {
+        var q = document.querySelector("#searchBar").value;
+        try {
+
+            const res = await fetch(`https://img-clone.herokuapp.com/data`);
+            const data = await res.json();
+            // console.log(data);
+            let searchBin=document.querySelector(".classSearchBin");
+            if (q != "") {
+                let count=0;
+                data.map((el) => {
+                    // console.log(el.title);
+                    if (el.title.indexOf(q) != -1) {
+                        searchBin.setAttribute("id","serchBin");
+                        // console.log(el.title, true, q);
+                        let a=document.createElement("a");
+                        a.append(el.title);
+                        searchBin.append(a);
+                        console.log(searchBin)
+                        count++;
+                    }
+                    if(count==12){
+                        return;
+                    }
+                })
+                console.log(count);
+                if(count==0){
+                    searchBin.setAttribute("id","serchBin");
+                    let a=document.createElement("a");
+                    a.append("No result fount");
+                    searchBin.append(a);
+                }
+            }else{
+                searchBin.setAttribute("id","a");
+                searchBin.innerHTML="";
+
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    }, 1500)
 }
+
+// var q=document.querySelector("#searchBar").value;
+//     try {
+
+//         const res = await fetch(`http://localhost:3000/data`);
+//         const data = await res.json();
+//         // console.log(data);
+//         data.map((el)=>{
+//             // console.log(el.title);
+//             if(el.title.indexOf(q)){
+//                 console.log(el.title);
+//             }
+//         })
+//     } catch (error) {
+//         console.log(error);
+//     }
 
 const main = document.querySelector('.container');
 const displayData = (data) => {
