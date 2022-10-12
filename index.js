@@ -50,22 +50,6 @@ const debounce = async () => {
     }, 1500)
 }
 
-// var q=document.querySelector("#searchBar").value;
-//     try {
-
-//         const res = await fetch(`http://localhost:3000/data`);
-//         const data = await res.json();
-//         // console.log(data);
-//         data.map((el)=>{
-//             // console.log(el.title);
-//             if(el.title.indexOf(q)){
-//                 console.log(el.title);
-//             }
-//         })
-//     } catch (error) {
-//         console.log(error);
-//     }
-
 const main = document.querySelector('.container');
 const displayData = (data) => {
 
