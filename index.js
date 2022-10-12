@@ -16,6 +16,7 @@ const debounce = async () => {
             let searchBin=document.querySelector(".classSearchBin");
             if (q != "") {
                 let count=0;
+                searchBin.innerHTML="";
                 data.map((el) => {
                     // console.log(el.title);
                     if (el.title.indexOf(q) != -1) {
