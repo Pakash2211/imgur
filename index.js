@@ -35,7 +35,8 @@ const debounce = async () => {
                 if(count==0){
                     searchBin.setAttribute("id","serchBin");
                     let a=document.createElement("a");
-                    a.append("No result fount");
+                    searchBin.innerHTML="";
+                    a.append("No result found");
                     searchBin.append(a);
                 }
             }else{
