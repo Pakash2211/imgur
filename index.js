@@ -1,14 +1,18 @@
 let currentPage = 1;
 let limit = 20;
 
+const debounce=()=>{
+    
+}
+
 const main = document.querySelector('.container');
 const displayData = (data) => {
 
 
 
-    data.map((res,idx) => {
+    data.map((res, idx) => {
 
-        const imgs = `https://picsum.photos/200/300?random=${idx+1}`;
+        const imgs = `https://picsum.photos/200/300?random=${idx + 1}`;
         // console.log(res.images);
         // const imgs = "https://financerewind.com/wp-content/uploads/2020/12/maxresdefault-12.jpg";
 
