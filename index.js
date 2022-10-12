@@ -47,7 +47,7 @@ const debounce = async () => {
         } catch (error) {
             console.log(error);
         }
-    }, 1500)
+    }, 300)
 }
 
 const main = document.querySelector('.container');
