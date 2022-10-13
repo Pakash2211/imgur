@@ -60,7 +60,7 @@ const displayData = (data) => {
         const imgs = `https://picsum.photos/200/300?random=${idx + 1}`;
         // console.log(res.images);
         // const imgs = "https://financerewind.com/wp-content/uploads/2020/12/maxresdefault-12.jpg";
-
+        //   let imgs = res?.images[0]?.link;
         if (!imgs) {
             return;
         }
