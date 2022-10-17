@@ -7,7 +7,7 @@
 - Create a clone of this website
 - HTML,CSS, vanilla JS
 <hr/>
-# Features :
+<h1>Features :</h1>
 
 - use grids, flex box
 - selectors, psuedo selectors etc.
