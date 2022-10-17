@@ -275,7 +275,7 @@ nav {
 }
 
 .lowerpart {
-  width: 82%;
+  width: 75%;
   margin: auto;
   margin-top: -80px;
 }
@@ -315,7 +315,7 @@ nav {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 15px;
   margin-top: 10px;
 

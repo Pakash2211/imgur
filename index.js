@@ -137,7 +137,7 @@ const showData = () => {
     setTimeout(() => {
         currentPage++;
         getData();
-    }, 200)
+    }, 100)
 }
 
 window.addEventListener('scroll', () => {
