@@ -2,12 +2,12 @@
 
 
 
-#Tech Stack
+# Tech Stack
 
 - Create a clone of this website
 - HTML,CSS, vanilla JS
 <hr/>
-#Features :
+# Features :
 
 - use grids, flex box
 - selectors, psuedo selectors etc.
