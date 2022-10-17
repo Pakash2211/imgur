@@ -420,3 +420,23 @@ nav {
 #serchBin>a:hover{
   background-color: gray;
 }
+
+.top_arrow{
+  background-color:  #3C424B;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  cursor: pointer;
+}
+.top_arrow  img {
+  width: 30px;
+  height: 30px;
+}
+
+
